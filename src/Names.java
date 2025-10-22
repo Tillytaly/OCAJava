@@ -62,6 +62,7 @@
 import Arrays.ArraysClass;
 import Arrays.ArraysClass;
 import DateAndTime.DateAndTime;
+import methods.Methods;
 
 public class Names {
     public static void main(String[] args){
@@ -73,7 +74,8 @@ public class Names {
 //        stringPool();
 //        ArraysClass.createArray();
 //        ArraysClass.sortSearchCompare();
-        DateAndTime.dateAndTime();
+//        DateAndTime.dateAndTime();
+        Methods.methods();
     }
     public static void createAString(){
       String bunia = "Bunia";
