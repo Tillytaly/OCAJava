@@ -58,7 +58,8 @@
 
 // Lesson 5 = String Methods
 
-
+import AccessModifiersZoo.AccessModifiersZoo;
+import AccessModifiersZooTest.AccessModifiersZooTest;
 import Arrays.ArraysClass;
 import Arrays.ArraysClass;
 import DateAndTime.DateAndTime;
@@ -75,7 +76,11 @@ public class Names {
 //        ArraysClass.createArray();
 //        ArraysClass.sortSearchCompare();
 //        DateAndTime.dateAndTime();
-        Methods.methods();
+//        Methods.methods();
+//        AccessModifiersZooTest.useZooModifier();
+//        AccessModifiersZoo.logCat();
+//        AccessModifiersZooTest.useCat();
+
     }
     public static void createAString(){
       String bunia = "Bunia";
