@@ -63,6 +63,9 @@ import AccessModifiersZooTest.AccessModifiersZooTest;
 import Arrays.ArraysClass;
 import Arrays.ArraysClass;
 import DateAndTime.DateAndTime;
+import StaticMembers.MyClass;
+import StaticMembers.StaticMembers;
+import StaticMembers.StaticMembersTest;
 import methods.Methods;
 
 public class Names {
@@ -80,6 +83,13 @@ public class Names {
 //        AccessModifiersZooTest.useZooModifier();
 //        AccessModifiersZoo.logCat();
 //        AccessModifiersZooTest.useCat();
+
+        StaticMembersTest staticMembersTest = new StaticMembersTest();
+        staticMembersTest.logTax();
+        MyClass.useGreatAll();
+
+        StaticMembers staticMembers = new StaticMembers();
+        staticMembers.logRoomSquareMeters();
 
     }
     public static void createAString(){
