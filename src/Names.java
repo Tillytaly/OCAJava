@@ -62,6 +62,7 @@ import AccessModifiersZoo.AccessModifiersZoo;
 import AccessModifiersZooTest.AccessModifiersZooTest;
 import Arrays.ArraysClass;
 import Arrays.ArraysClass;
+import BoxingUnboxing.BoxingUnboxing;
 import DateAndTime.DateAndTime;
 import StaticMembers.MyClass;
 import StaticMembers.StaticMembers;
@@ -84,13 +85,16 @@ public class Names {
 //        AccessModifiersZoo.logCat();
 //        AccessModifiersZooTest.useCat();
 
-        StaticMembersTest staticMembersTest = new StaticMembersTest();
-        staticMembersTest.logTax();
-        MyClass.useGreatAll();
+//        StaticMembersTest staticMembersTest = new StaticMembersTest();
+//        staticMembersTest.logTax();
+//        MyClass.useGreatAll();
+//
+//        StaticMembers staticMembers = new StaticMembers();
+//        staticMembers.logRoomSquareMeters();
 
-        StaticMembers staticMembers = new StaticMembers();
-        staticMembers.logRoomSquareMeters();
-
+        BoxingUnboxing boxingUnboxing = new BoxingUnboxing();
+        boxingUnboxing.boxAndUnbox();
+        boxingUnboxing.boxingUnboxingAutocasting();
     }
     public static void createAString(){
       String bunia = "Bunia";
