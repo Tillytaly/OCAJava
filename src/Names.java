@@ -63,12 +63,17 @@ import AccessModifiersZooTest.AccessModifiersZooTest;
 import Arrays.ArraysClass;
 import Arrays.ArraysClass;
 import BoxingUnboxing.BoxingUnboxing;
+import Constructors.AnotherClass;
+import Constructors.Constructor;
+import CreatingClasses.CreatorExtension;
 import DateAndTime.DateAndTime;
 import Inheritance.Abi;
 import Overloads.Overloads;
+import SM.sm;
 import StaticMembers.MyClass;
 import StaticMembers.StaticMembers;
 import StaticMembers.StaticMembersTest;
+import ThisAndSuper.ThisAndSuperChild;
 import methods.Methods;
 
 public class Names {
@@ -98,13 +103,28 @@ public class Names {
 //        boxingUnboxing.boxAndUnbox();
 //        boxingUnboxing.boxingUnboxingAutocasting();
 
-        Overloads overloads = new Overloads();
-        long l = 1L;
-        int i = 2;
-        overloads.overlodeThis(i);
+//        sm.log("Hello World");
+//        Overloads overloads = new Overloads();
+//        long l = 1L;
+//        int i = 2;
+//        overloads.overlodeThis(i);
+//
+//        Abi abi = new Abi();
+//        abi.logAbi();
+//        CreatorExtension cr = new CreatorExtension();
+//        cr.updateProps(7,"Abi");
+//        cr.logData();
 
-        Abi abi = new Abi();
-        abi.logAbi();
+        Constructor constructor = new Constructor();
+        Constructor cons2 = new Constructor("Arg!");
+//        Constructor consPrivate = new Constructor(5);
+        //private constructor can not be accessed
+//        Constructor cons3 = new Constructor( 7, "is"  );
+        //protected constructor can only be called within package
+//        AnotherClass ac = new AnotherClass();
+
+        ThisAndSuperChild child = new ThisAndSuperChild();
+        ThisAndSuperChild child2 = new ThisAndSuperChild("Im in this!");
     }
     public static void createAString(){
       String bunia = "Bunia";
