@@ -1,0 +1,84 @@
+// exc 1
+static field init: Base.staticField
+Base static block
+static field init: staticX
+static block
+main start
+--- create with no-arg ctor ---
+instance field init: Base.instanceField
+Base instance initializer
+Base ctor with s= default
+Base no-arg constructor body
+instance field init: instA
+instance initializer
+Base ctor with s= from int 10
+int-arg constructor body (n=" + 10 + ")"
+no-arg constructor body
+"--- create with int-arg ctor ---"
+instance field init: Base.instanceField
+Base instance initializer
+Base ctor with s= default
+"Base no-arg constructor body"
+instance field init: instA
+instance initializer
+Base ctor with s= from int 10
+int-arg constructor body 10
+no-arg constructor body
+main end
+
+//exc 2
+Hello
+Woof
+Good afternoon
+
+//exc 3
+Hello!
+0
+I am the main one
+Good afternoon
+Nme: Rex
+1
+Woof
+
+//Exc 4
+Base.s1
+Base static block
+Derived.s1
+Derived static block
+Derived.i1
+Derived instance block
+Derived() constructor start
+Derived() constructor end
+main start
+Derived.i1
+Derived instance block
+Derived() constructor start
+Derived() constructor end
+main end
+
+❌
+// Exc 5
+Parent() constructor start
+Parent.init()
+Child.initValue()
+Child() constructor
+❌
+
+//Exc 6
+Alpha.s
+Beta.s
+main start
+Alpha instance block
+Alpha.x
+Alpha()
+Beta instance block
+Beta.x
+Beta(int) start, param x = 10"
+Beta(int) end
+Beta()
+main end
+✅
+
+Exc 7
+Engine() constructor
+Car.initPower()

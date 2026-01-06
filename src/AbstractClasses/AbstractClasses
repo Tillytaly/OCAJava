@@ -1,0 +1,175 @@
+Exercise 1 – Create a simple abstract class
+
+Create an abstract class called Animal with:
+
+one abstract method: makeSound()
+
+one concrete method: sleep() that prints "Zzz..."
+
+Then create two subclasses: Dog and Cat, each implementing makeSound().
+
+Goal: understand basic abstract method implementation.
+
+Exercise 2 – Constructors in abstract classes
+
+Create an abstract class Vehicle with:
+
+a field maxSpeed
+
+a constructor that sets maxSpeed
+
+an abstract method move()
+
+Create a class Bicycle extending Vehicle.
+Call the super() constructor and implement move().
+
+Goal: understand how super() works with abstract classes.
+
+✅ LEVEL 2 — Override rules & polymorphism
+Exercise 3 – Covariant return types
+
+Create an abstract class Document with an abstract method:
+
+Document getCopy();
+
+
+Create a subclass PDFDocument whose getCopy() returns PDFDocument instead of Document.
+
+Goal: see covariant return types in action.
+
+Exercise 4 – Polymorphic behavior
+
+Create a Shape abstract class with:
+
+abstract method double area()
+
+concrete method double doubleArea() that returns area() * 2
+
+Then create Circle and Rectangle subclasses.
+In main(), create an array Shape[] with mixed shapes and print their doubled areas.
+
+Goal: understand runtime method dispatch and leveraging concrete methods in abstract classes.
+
+✅ LEVEL 3 — Multiple levels of inheritance
+Exercise 5 – Abstract subclass chaining
+
+Create:
+
+Worker (abstract)
+
+abstract method work()
+
+Employee (abstract) extends Worker
+
+implements work()
+
+defines abstract method calculateSalary()
+
+Programmer extends Employee
+
+implements calculateSalary()
+
+Goal: see that an abstract class can implement some methods but still remain abstract.
+
+Exercise 6 – Template method pattern
+
+Create abstract class Game:
+
+final method play():
+
+start();
+playTurn();
+end();
+
+
+start() and end() are concrete
+
+playTurn() is abstract
+
+Create two games: ChessGame and CheckersGame.
+
+Goal: learn template method pattern with abstract classes + final methods.
+
+✅ LEVEL 4 — Realistic object modeling
+Exercise 7 – Payment system
+
+Create an abstract class Payment with:
+
+field: amount
+
+constructor
+
+abstract method process()
+
+concrete method validateAmount()
+
+Create two subclasses:
+
+CreditCardPayment
+
+PayPalPayment
+
+Each implements process() differently.
+
+In main(), process multiple payments polymorphically.
+
+Goal: abstract class for shared logic, different implementations for subclasses.
+
+Exercise 8 – Device hierarchy with static behavior
+
+Create abstract class Device:
+
+static method powerInfo() returns "Devices use power"
+
+abstract method turnOn()
+
+Create Laptop and Smartphone classes.
+
+In main(), call the static method from the abstract class and invoke turnOn() on objects.
+
+Goal: understand that abstract classes may contain static methods.
+
+✅ LEVEL 5 — Challenging
+Exercise 9 – Abstract class + interface comparison
+
+Create:
+
+an abstract class Animal
+
+an interface Pet
+
+Animal has:
+
+abstract method eat()
+
+Pet has:
+
+abstract method play()
+
+Create Dog that:
+
+extends Animal
+
+implements Pet
+
+Provide full behavior.
+
+Goal: understand mixing inheritance + interfaces.
+
+Exercise 10 – Framework-like architecture
+
+Create an abstract class DataExporter with:
+
+abstract methods: connect(), exportData(), disconnect()
+
+final method runExport() calling the three steps in order
+
+Create two exporters:
+
+CSVExporter
+
+JSONExporter
+
+Simulate exporting data.
+
+Goal: simulate the architecture used in real frameworks.

@@ -1,0 +1,146 @@
+Exercise 1 – Basic implementation
+
+Create an interface Vehicle with:
+
+one abstract method int getMaxSpeed()
+
+Create a class Car that implements Vehicle.
+
+Task
+
+Implement the interface correctly
+
+Verify that the method in Car is public
+
+Try (mentally or in code) to instantiate Vehicle and observe why it fails
+
+Exercise 2 – Multiple interfaces
+
+Create two interfaces:
+
+Flyable with method void fly()
+
+Sailable with method void sail()
+
+Create a class AmphibiousPlane that implements both interfaces.
+
+Task
+
+Implement both methods
+
+Confirm that one class can implement multiple interfaces
+
+Exercise 3 – Duplicate method conflict (compile-time error)
+
+Create two interfaces:
+
+Readable with method int read()
+
+Writable with method double read()
+
+Create a class Device that implements both interfaces.
+
+Task
+
+Try to implement the class
+
+Identify exactly why the code does not compile
+
+Do not fix it yet — just understand the rule being violated
+
+Exercise 4 – Default method usage
+
+Create an interface Logger with:
+
+one abstract method String getPrefix()
+
+one default method void log(String message)
+(the default method should use getPrefix())
+
+Create a class FileLogger that implements Logger.
+
+Task
+
+Implement only the abstract method
+
+Call log() from an instance of FileLogger
+
+Observe how the default method uses the class implementation
+
+Exercise 5 – Overriding default methods
+
+Extend the previous exercise.
+
+Create another class ConsoleLogger implementing Logger.
+
+Task
+
+Override the default log method
+
+Call both the overridden and original behavior (hint: you cannot call the default directly yet — think why)
+
+Exercise 6 – Default method conflict
+
+Create two interfaces:
+
+AutoPilot with default method void navigate()
+
+ManualControl with default method void navigate()
+
+Create a class Car that implements both interfaces.
+
+Task
+
+Observe the compilation error
+
+Override navigate()
+
+Inside the override, explicitly call both interface implementations using InterfaceName.super.methodName()
+
+Exercise 7 – Private methods inside interfaces
+
+Create an interface Validator with:
+
+a default method boolean validate(String input)
+
+a private method used inside validate
+
+a private static helper method
+
+Task
+
+Use the private methods to split validation logic
+
+Confirm where each private method can be called from
+
+Exercise 8 – Abstract methods used by default methods
+
+Create an interface ReportGenerator with:
+
+abstract method String fetchData()
+
+default method void generateReport() that uses fetchData()
+
+Create a class DatabaseReportGenerator.
+
+Task
+
+Implement only fetchData()
+
+Call generateReport()
+
+Explain why this works even though the default method calls an abstract one
+
+Exercise 9 – Interface vs abstract class thinking exercise
+
+Create:
+
+an interface Identifiable
+
+an abstract class BaseEntity
+
+Task
+
+Decide what belongs in the interface and what in the abstract class
+
+Justify your decision (no code needed, just reasoning)

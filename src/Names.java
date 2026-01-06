@@ -58,6 +58,7 @@
 
 // Lesson 5 = String Methods
 
+import AbstractClasses.PDFDocument;
 import AccessModifiersZoo.AccessModifiersZoo;
 import AccessModifiersZooTest.AccessModifiersZooTest;
 import Arrays.ArraysClass;
@@ -68,6 +69,8 @@ import Constructors.Constructor;
 import CreatingClasses.CreatorExtension;
 import DateAndTime.DateAndTime;
 import Inheritance.Abi;
+import InitializingObjects.OrderExample1;
+import InitializingObjects.OrderExample2;
 import Overloads.Overloads;
 import SM.sm;
 import StaticMembers.MyClass;
@@ -115,16 +118,25 @@ public class Names {
 //        cr.updateProps(7,"Abi");
 //        cr.logData();
 
-        Constructor constructor = new Constructor();
-        Constructor cons2 = new Constructor("Arg!");
+//        Constructor constructor = new Constructor();
+//        Constructor cons2 = new Constructor("Arg!");
 //        Constructor consPrivate = new Constructor(5);
         //private constructor can not be accessed
 //        Constructor cons3 = new Constructor( 7, "is"  );
         //protected constructor can only be called within package
 //        AnotherClass ac = new AnotherClass();
 
-        ThisAndSuperChild child = new ThisAndSuperChild();
-        ThisAndSuperChild child2 = new ThisAndSuperChild("Im in this!");
+//        ThisAndSuperChild child = new ThisAndSuperChild();
+//        ThisAndSuperChild child2 = new ThisAndSuperChild("Im in this!");
+
+//        OrderExample1 oe = new OrderExample1();
+//        OrderExample2 oe2 = new OrderExample2();
+
+        PDFDocument doc =  new PDFDocument();
+
+        System.out.println(doc.getCopy());
+
+
     }
     public static void createAString(){
       String bunia = "Bunia";

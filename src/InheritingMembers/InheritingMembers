@@ -1,0 +1,94 @@
+🔹 Task 1 — Access Modifiers & Valid Overrides
+
+Create two classes: Animal and Dog.
+
+In Animal, create three methods:
+
+public void eat()
+
+protected void makeSound()
+
+void sleep() (package-private)
+
+In Dog, attempt to override all three.
+
+For each override, make the access modifier:
+
+valid for one method
+
+invalid (too restrictive) for another
+
+same for the last
+
+Observe which ones compile and which do not, and understand why.
+
+🔹 Task 2 — Checked Exceptions & Overriding
+
+Create a class Parent with:
+
+public void process() throws IOException
+
+
+Then create a Child class.
+
+In Child, try these variants of overriding process():
+
+Throwing a narrower checked exception (e.g., FileNotFoundException)
+
+Throwing no exception
+
+Throwing a broader exception (e.g., Exception)
+
+Identify which versions are valid and which cause compilation errors.
+
+🔹 Task 3 — Static Method Hiding vs. Overriding
+
+Create a class A with:
+
+public static void identify()
+
+
+and a class B that extends A, also declaring:
+
+public static void identify()
+
+
+Then write:
+
+A a1 = new A();
+A a2 = new B();
+B b1 = new B();
+
+
+Call identify() on each variable:
+
+a1.identify();
+a2.identify();
+b1.identify();
+
+
+Predict and verify the output.
+This will help you see the difference between method hiding (static) and method overriding (instance).
+
+🔹 Task 4 — Variable Hiding
+
+Create:
+
+class SuperClass {
+    public String name = "Super";
+}
+
+class SubClass extends SuperClass {
+    public String name = "Sub";
+}
+
+
+Then:
+
+SuperClass s1 = new SuperClass();
+SuperClass s2 = new SubClass();
+SubClass s3 = new SubClass();
+
+
+Print name for each reference.
+Explain why methods use dynamic dispatch, but variables use reference type, not object type.
